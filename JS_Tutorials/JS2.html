@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<script>
+	// 1) 
+	let add7 = (a) => a + 7
+	console.log(add7(5))
+
+	//2
+	let multiply = (a, b) => a * b
+	console.log(multiply(5, 7))
+
+	//3
+	function capitalize(str) 
+	{
+	   var res = str.toLowerCase().split(' ');
+	   console.log(res)
+	   for (var i = 0; i < res.length; i++)
+	   {
+	       res[i] = res[i].charAt(0).toUpperCase() + res[i].substring(1);     
+	   }
+	   return res.join(' '); 
+	}
+	console.log(capitalize('mOoR boaT'))
+
+	//4
+	function lastLetter(str)
+	{
+		var res = str.split("");
+		var rev = res.reverse();
+		var joins = rev.join("")
+		return joins[0];
+	}
+	console.log(lastLetter('goodbye'))
+
+	</script>
+</body>
+</html>
